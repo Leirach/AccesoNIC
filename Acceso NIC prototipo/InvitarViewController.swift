@@ -44,6 +44,7 @@ class InvitarViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBAction func esconderTodo(_ sender: UITapGestureRecognizer) {
         datepicker.isHidden = true
         motivopicker.isHidden = true
+        view.endEditing(true)
     }
     
     @IBAction func seleccionarMotivo(_ sender: UIButton) {

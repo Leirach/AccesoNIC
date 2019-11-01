@@ -23,6 +23,9 @@ class DependienteViewController: UIViewController {
         tycswitch.isHidden = !sender.isOn
     }
 
+    @IBAction func clearView(_ sender: Any) {
+        view.endEditing(true)
+    }
     
     @IBAction func menuguardar(_ sender: Any) {
         let alert = UIAlertController(title: "¿Guardar dependiente?", message: "Se guardarán datos del dependiente", preferredStyle: .alert)

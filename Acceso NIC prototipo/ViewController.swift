@@ -16,5 +16,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func clearView(_ sender: Any) {
+        view.endEditing(true)
+    }
 }
 
